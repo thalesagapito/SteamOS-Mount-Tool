@@ -72,9 +72,9 @@ main() {
     fi
 
     # --- Create and Apply Configuration ---
-    MOUNT_PATH="/var/mnt/$mount_name"
-    UNIT_FILENAME="var-mnt-$mount_name.mount"
-    UNIT_FILE_PATH="/run/media/deck/$UNIT_FILENAME"
+    MOUNT_PATH="/run/media/deck/$mount_name"
+    UNIT_FILENAME="run-media-deck-$mount_name.mount"
+    UNIT_FILE_PATH="/etc/systemd/system/$UNIT_FILENAME"
 
     echo "Creating mount folder at $MOUNT_PATH..."
     mkdir -p "$MOUNT_PATH"
